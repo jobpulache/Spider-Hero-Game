@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hero spider Game</title>
+    <title>Spider Hero Game</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <div id="gameContainer">
+        <div id="player"></div>
+        <div class="platform" style="left: 100px; top: 300px;"></div>
+        <div class="platform" style="left: 300px; top: 200px;"></div>
+        <div class="platform" style="left: 500px; top: 400px;"></div>
+        <div id="enemy"></div>
+        <div id="scoreBoard">Score: <span id="score">0</span></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

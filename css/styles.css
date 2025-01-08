@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #001f3f, #004080);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#gameContainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#player {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border-radius: 50%;
+    bottom: 50px;
+    left: 50px;
+    box-shadow: 0 0 10px #ff0000;
+    transition: transform 0.1s ease;
+}
+
+.platform {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background: brown;
+    border-radius: 5px;
+}
+
+#enemy {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: purple;
+    border-radius: 50%;
+    top: 50px;
+    left: 500px;
+    animation: enemyMove 3s linear infinite;
+}
+
+@keyframes enemyMove {
+    0% { left: 500px; }
+    50% { left: 200px; }
+    100% { left: 500px; }
+}
+
+#scoreBoard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
